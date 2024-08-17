@@ -1,0 +1,20 @@
+:root {
+    --lightClr: #ffffff;
+    --darkClr: #000000;
+    
+    --fontVar1: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}

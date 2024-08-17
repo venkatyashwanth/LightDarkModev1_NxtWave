@@ -1,0 +1,38 @@
+@import "../../scss/base";
+
+.appBg {
+    height: 100vh;
+    @include d_xyCenter;
+
+    .appContent {
+        border: 1px solid var(--darkClr);
+        padding: 2.5rem 1rem;
+        border-radius: 5px;
+        text-align: center;
+
+        h1 {
+            @extend %headingText;
+        }
+
+        button {
+            margin-top: 2rem;
+            @extend %btnElement;
+        }
+
+        &.darkMode {
+            background-color: var(--darkClr);
+
+            h1 {
+                color: var(--lightClr);
+            }
+        }
+
+        &.lightMode {
+            background-color: var(--lightClr);
+
+            h1 {
+                color: var(--darkClr);
+            }
+        }
+    }
+}
